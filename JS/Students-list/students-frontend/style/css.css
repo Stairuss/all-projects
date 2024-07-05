@@ -1,0 +1,218 @@
+:root {
+    --border-color: #000;
+    --text-color: #000;
+}
+
+ul,
+li {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+.title {
+    color: var(--text-color);
+    font-size: 70px;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.error-label {
+    display: block;
+    color: red;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Фильтры */
+.filter__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 1068px;
+    margin-bottom: 50px;
+    border: 1px solid var(--border-color);
+}
+
+.filter__title {
+    color: var(--text-color);
+    font-size: 40px;
+}
+
+.filter__item {
+    width: 500px;
+    padding: 10px;
+}
+
+.filter__text {
+    font-weight: 700;
+    color: var(--text-color);
+    font-size: 25px;
+}
+
+.input-filter {
+    width: 300px;
+    height: 50px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.filter__btn {
+    width: 50%;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+    transition: .2s linear;
+    background: #0B63F6;
+    cursor: pointer;
+}
+
+.filter__btn:hover, .delete-student-btn:hover {
+    box-shadow: 0 0 0 2px white, 0 0 0 4px #3C82F8;
+}
+
+
+/* Таблица */
+.table {
+    width: 1068px;
+    margin-bottom: 50px;
+    border: 1px solid #000;
+}
+
+.table-head__th {
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #FFF;
+    background-color: #0B63F6;
+}
+
+.table-head__th:hover {
+  background-color: #4f8aef;
+}
+
+.table-head__th:nth-child(1) {
+    width: 35%;
+}
+
+.table-head__th:nth-child(2) {
+    width: 25%;
+}
+
+.table-head__th:nth-child(3) {
+    width: 20%;
+}
+
+.table-head__th:nth-child(4) {
+    width: 20%;
+}
+
+.table__body tr {
+  cursor: pointer;
+}
+
+.table-body__select{
+  background-color: #bcd0f2;
+}
+
+.delete-student-block {
+  width: 1068px;
+  height: 50px;
+  text-align: center;
+}
+
+.delete-student-btn {
+  width: 50%;
+  height: 50px;
+  font-size: 20px;
+  color: white;
+  transition: .2s linear;
+  background: #0B63F6;
+  cursor: pointer;
+}
+
+
+
+/* Окно добавления студента */
+.add-student {
+    width: 500px;
+    min-height: 400px;
+}
+
+.add-student__open-form-btn {
+    width: 200px;
+    height: 50px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px 0 rgba(11, 99, 246, 1);
+    transition: 0.5s;
+    font-size: 20px;
+    background-color: #0B63F6;
+    color: #fff;
+    cursor: pointer;
+}
+
+.add-student__open-form-btn:hover {
+    transform: translate(0, -3px);
+    box-shadow: 0 20px 40px 0 rgba(11, 99, 246, 1);
+}
+
+.add-student__form {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
+
+.add-student__form-opacity {
+    opacity: 1;
+}
+
+.form__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.form__block:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.form__text {
+    font-size: 18px;
+}
+
+.form__input {
+    width: 288px;
+    height: 100%;
+    font-size: 15px;
+}
+
+.form__add-student-btn {
+    width: 200px;
+    height: 50px;
+    box-shadow: 0 5px 15px 0 rgba(11, 99, 246, 1);
+    transition: 0.5s;
+    font-size: 20px;
+    background-color: #0B63F6;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form__add-student-btn:hover {
+    transform: translate(0, -3px);
+    box-shadow: 0 20px 40px 0 rgba(11, 99, 246, 1);
+}

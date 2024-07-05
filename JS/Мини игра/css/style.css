@@ -1,0 +1,134 @@
+:root {
+    --width-btn: 300px;
+    --height-btn: 89px;
+    --margin-bottom: 50px;
+}
+
+.container{
+    position: relative;
+    display: flex;   
+    width: 1000px;
+    min-height: 650px;
+    margin: 0 auto;
+    gap: 50px;
+    font-size: 100px;
+    color: rgb(50, 20, 223);
+}
+
+.list {    
+    display: flex;
+    flex-wrap: wrap;
+    width: 650px;
+    gap: 50px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.list__item {    
+    height: 300px;
+    background-color: rgb(16, 229, 211);
+    border-radius: 5%;
+}
+
+.list__btn {
+    width: var(--width-btn);
+    height: 300px;
+    color: #fff;
+    font-size: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 5%;
+    font-size: 70px;
+}
+
+.btn-block {
+    display: flex;
+    flex-direction: column;
+    width: var(--width-btn);
+    min-height: 450px;    
+}
+
+.open-settings {
+    width: var(--width-btn);
+    height: var(--height-btn);
+    margin-bottom: var(--margin-bottom);
+    font-size: 50px;    
+    background-color: rgb(243, 220, 17);
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.main-btn {    
+    width: var(--width-btn);
+    height: var(--height-btn);
+    margin-bottom: var(--margin-bottom);
+    font-size: 50px;    
+    background-color: chartreuse;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.win-text {
+    position: absolute;
+    left: 10%;
+    top: 35%;
+    margin: 0;
+    font-size: var(--height-btn);
+}
+
+.restart-btn {
+    width: var(--width-btn);
+    height: var(--height-btn);
+    margin-bottom: var(--margin-bottom);
+    font-size: 50px;
+    background-color: rgb(15, 118, 177);
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.input {
+    width: var(--width-btn);
+    height: var(--height-btn);
+    margin-bottom: var(--margin-bottom);
+    font-size: 35px;
+    background-color: rgb(205, 245, 10);
+}
+
+.save-settings {    
+    width: var(--width-btn);
+    height: var(--height-btn);
+    margin-bottom: var(--margin-bottom);
+    font-size: 30px;
+    background-color: rgb(205, 245, 10);
+    cursor: pointer;
+}
+
+.validity {
+    font-size: 30px;    
+}
+
+.hidden {
+    visibility: hidden;
+    /* display: none; */
+}
+
+.display-none {
+    display: none;
+}
+
+.color-transparent {
+    color: transparent;
+}
+
+.active {
+    background-color: darkorange;
+}
+
+.bcg-green {
+    background-color: chartreuse;
+}
+
+.fail {
+    background-color: rgb(240, 13, 58);
+}

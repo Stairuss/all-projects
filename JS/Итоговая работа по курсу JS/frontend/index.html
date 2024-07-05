@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="./style/general-styles.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/media.css">
+    <script type="module" src="./js/main.js" defer></script>
+    <title>Клиентская база</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="header__block container flex">
+            <a class="header__link" href="#" title="skb.">
+                <picture>
+                    <img class="header__logo" src="./img/logo.png" alt="Логотип skb.">
+                </picture>
+            </a>
+            <form class="header__form">
+                <input class="header__input" type="text" placeholder="Введите запрос">
+            </form>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main class="main">
+        <section class="table-container container">
+            <h1 class="table-container__title visibility-hidden">skb</h1>
+            <h2 class="table-container__title">Клиенты</h2>
+            <table class="table-container__table table container">
+                <thead class="table__head table-head">
+                    <tr class="table-head__tr">
+                        <th id="id" class="table-head__th" data-type="id">
+                            <div class="table-head__th-block">
+                                <span class="table-head__text">ID</span>
+                                <svg class="table-head__svg-arrow" width="12" height="12" viewBox="0 0 12 12"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_211_4868)">
+                                        <path
+                                            d="M10 6L9.295 5.295L6.5 8.085L6.5 2H5.5L5.5 8.085L2.71 5.29L2 6L6 10L10 6Z"
+                                            fill="#9873FF" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_211_4868">
+                                            <rect width="12" height="12" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </th>
+                        <th id="full-name" class="table-head__th" data-type="fullName">
+                            <div class="table-head__th-block">
+                                <span class="table-head__text">Фамилия Имя Отчество
+                                    <svg class="table-head__svg-arrow" width="12" height="12" viewBox="0 0 12 12"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_211_4868)">
+                                            <path
+                                                d="M10 6L9.295 5.295L6.5 8.085L6.5 2H5.5L5.5 8.085L2.71 5.29L2 6L6 10L10 6Z"
+                                                fill="#9873FF" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_211_4868">
+                                                <rect width="12" height="12" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <svg class="table-head__svg-a-z" width="16" height="8" viewBox="0 0 16 8"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.37109 8L4.6582 6.01758H1.92871L1.23047 8H0L2.6709 0.832031H3.94043L6.61133 8H5.37109ZM4.35059 5.01172L3.68164 3.06836C3.63281 2.93815 3.56445 2.73307 3.47656 2.45312C3.39193 2.17318 3.33333 1.9681 3.30078 1.83789C3.21289 2.23828 3.08431 2.67611 2.91504 3.15137L2.27051 5.01172H4.35059ZM6.96289 5.80762V4.83105H9.47266V5.80762H6.96289ZM13.0322 5.13867L11.2646 8H9.93164L11.9434 4.87012C11.0319 4.55436 10.5762 3.8903 10.5762 2.87793C10.5762 2.22363 10.8024 1.72396 11.2549 1.37891C11.7074 1.03385 12.373 0.861328 13.252 0.861328H15.3955V8H14.2236V5.13867H13.0322ZM14.2236 1.83789H13.2959C12.8044 1.83789 12.4268 1.92578 12.1631 2.10156C11.9027 2.27409 11.7725 2.55729 11.7725 2.95117C11.7725 3.33529 11.8994 3.63477 12.1533 3.84961C12.4072 4.06445 12.8011 4.17188 13.335 4.17188H14.2236V1.83789Z"
+                                            fill="#9873FF" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </th>
+                        <th id="create-date" class="table-head__th" data-type="createData">
+                            <div class="table-head__th-block">
+                                <span class="table-head__text">Дата и время создания
+                                    <svg class="table-head__svg-arrow" width="12" height="12" viewBox="0 0 12 12"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_211_4868)">
+                                            <path
+                                                d="M10 6L9.295 5.295L6.5 8.085L6.5 2H5.5L5.5 8.085L2.71 5.29L2 6L6 10L10 6Z"
+                                                fill="#9873FF" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_211_4868">
+                                                <rect width="12" height="12" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                            </div>
+                        </th>
+                        <th id="edit-date" class="table-head__th" data-type="editDate">
+                            <div class="table-head__th-block">
+                                <span class="table-head__text">Последние изменения
+                                    <svg class="table-head__svg-arrow" width="12" height="12" viewBox="0 0 12 12"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_211_4868)">
+                                            <path
+                                                d="M10 6L9.295 5.295L6.5 8.085L6.5 2H5.5L5.5 8.085L2.71 5.29L2 6L6 10L10 6Z"
+                                                fill="#9873FF" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_211_4868">
+                                                <rect width="12" height="12" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                            </div>
+                        </th>
+                        <th id="contacts" class="table-head__th">
+                            <span class="table-head__text">Контакты</span>
+                        </th>
+                        <th id="actions" class="table-head__th">
+                            <span class="table-head__text">Действия</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="table__tbody tbody">
+                </tbody>
+            </table>
+            <div class="add-client flex">
+                <button class="add-client__btn btn flex">
+                    <svg class="add-client__svg" width="23" height="16" viewBox="0 0 23 16" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.5 8C16.71 8 18.5 6.21 18.5 4C18.5 1.79 16.71 0 14.5 0C12.29 0 10.5 1.79 10.5 4C10.5 6.21 12.29 8 14.5 8ZM5.5 6V3H3.5V6H0.5V8H3.5V11H5.5V8H8.5V6H5.5ZM14.5 10C11.83 10 6.5 11.34 6.5 14V16H22.5V14C22.5 11.34 17.17 10 14.5 10Z"
+                            fill="#9873FF" />
+                    </svg>
+                    <span class="add-client__text-btn">Добавить клиента</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Форма добавления нового клиента -->
+        <form id="form-add-client" class="form visibility-hidden" action="http://localhost:3000" novalidate>
+            <div class="form__top-block">
+                <div class="form__title-block flex">
+                    <h3 class="form__title title">Новый клиент</h3>
+                    <button class="form__close-btn btn">
+                        <svg class="form__svg-cross" width="29" height="29" viewBox="0 0 29 29" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M22.2332 7.73333L21.2665 6.76666L14.4998 13.5334L7.73318 6.7667L6.76652 7.73336L13.5332 14.5L6.76654 21.2667L7.73321 22.2333L14.4998 15.4667L21.2665 22.2334L22.2332 21.2667L15.4665 14.5L22.2332 7.73333Z"
+                                fill="#B0B0B0" />
+                        </svg>
+                    </button>
+                </div>
+                <input class="form__input input-surname" type="text" maxlength="30">
+                <input class="form__input input-name" type="text" maxlength="30">
+                <input class="form__input input-lastname" type="text" maxlength="30">
+            </div>
+            <div class="form__add-contact-block">
+                <ul class="form__add-contact-list">
+                </ul>
+                <div class="form__add-contact-btn-block flex">
+                    <span>
+                        <svg class="form__add-contact-svg" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_224_8628)">
+                                <path
+                                    d="M7.99998 4.66659C7.63331 4.66659 7.33331 4.96659 7.33331 5.33325V7.33325H5.33331C4.96665 7.33325 4.66665 7.63325 4.66665 7.99992C4.66665 8.36659 4.96665 8.66659 5.33331 8.66659H7.33331V10.6666C7.33331 11.0333 7.63331 11.3333 7.99998 11.3333C8.36665 11.3333 8.66665 11.0333 8.66665 10.6666V8.66659H10.6666C11.0333 8.66659 11.3333 8.36659 11.3333 7.99992C11.3333 7.63325 11.0333 7.33325 10.6666 7.33325H8.66665V5.33325C8.66665 4.96659 8.36665 4.66659 7.99998 4.66659ZM7.99998 1.33325C4.31998 1.33325 1.33331 4.31992 1.33331 7.99992C1.33331 11.6799 4.31998 14.6666 7.99998 14.6666C11.68 14.6666 14.6666 11.6799 14.6666 7.99992C14.6666 4.31992 11.68 1.33325 7.99998 1.33325ZM7.99998 13.3333C5.05998 13.3333 2.66665 10.9399 2.66665 7.99992C2.66665 5.05992 5.05998 2.66659 7.99998 2.66659C10.94 2.66659 13.3333 5.05992 13.3333 7.99992C13.3333 10.9399 10.94 13.3333 7.99998 13.3333Z"
+                                    fill="#9873FF" />
+                            </g>
+                        </svg>
+                    </span>
+                    <button class="form__add-contact-btn btn">Добавить контакт</button>
+                </div>
+            </div>
+            <div class="form__bottom-block flex">
+                <button class="form__save-btn btn">Сохранить</button>
+                <button class="form__cansel-btn btn">Отмена</button>
+            </div>
+        </form>
+
+        <!-- Форма с редактированием клиента -->
+        <form id="form-edit-client" class="form visibility-hidden" action="http://localhost:3000" novalidate>
+            <div class="form__top-block">
+                <div class="form__title-block flex">
+                    <div class="form__title-id-block flex">
+                        <h3 class="form__title title">Изменить данные</h3>
+                        <p class="form__title-id">ID: <span class="form__title-id-number"></span></p>
+                    </div>
+                    <button class="form__close-btn btn">
+                        <svg class="form__svg-cross" width="29" height="29" viewBox="0 0 29 29" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M22.2332 7.73333L21.2665 6.76666L14.4998 13.5334L7.73318 6.7667L6.76652 7.73336L13.5332 14.5L6.76654 21.2667L7.73321 22.2333L14.4998 15.4667L21.2665 22.2334L22.2332 21.2667L15.4665 14.5L22.2332 7.73333Z"
+                                fill="#B0B0B0" />
+                        </svg>
+                    </button>
+                </div>
+                <input class="form__input input-surname" type="text" maxlength="30">
+                <input class="form__input input-name" type="text" maxlength="30">
+                <input class="form__input input-lastname" type="text" maxlength="30">
+            </div>
+            <div class="form__add-contact-block">
+                <ul class="form__add-contact-list">
+                </ul>
+                <div class="form__add-contact-btn-block flex">
+                    <span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_224_8628)">
+                                <path
+                                    d="M7.99998 4.66659C7.63331 4.66659 7.33331 4.96659 7.33331 5.33325V7.33325H5.33331C4.96665 7.33325 4.66665 7.63325 4.66665 7.99992C4.66665 8.36659 4.96665 8.66659 5.33331 8.66659H7.33331V10.6666C7.33331 11.0333 7.63331 11.3333 7.99998 11.3333C8.36665 11.3333 8.66665 11.0333 8.66665 10.6666V8.66659H10.6666C11.0333 8.66659 11.3333 8.36659 11.3333 7.99992C11.3333 7.63325 11.0333 7.33325 10.6666 7.33325H8.66665V5.33325C8.66665 4.96659 8.36665 4.66659 7.99998 4.66659ZM7.99998 1.33325C4.31998 1.33325 1.33331 4.31992 1.33331 7.99992C1.33331 11.6799 4.31998 14.6666 7.99998 14.6666C11.68 14.6666 14.6666 11.6799 14.6666 7.99992C14.6666 4.31992 11.68 1.33325 7.99998 1.33325ZM7.99998 13.3333C5.05998 13.3333 2.66665 10.9399 2.66665 7.99992C2.66665 5.05992 5.05998 2.66659 7.99998 2.66659C10.94 2.66659 13.3333 5.05992 13.3333 7.99992C13.3333 10.9399 10.94 13.3333 7.99998 13.3333Z"
+                                    fill="#9873FF" />
+                            </g>
+                        </svg>
+                    </span>
+                    <button class="form__add-contact-btn btn">Добавить контакт</button>
+                </div>
+            </div>
+            <div class="form__bottom-block flex">
+                <button class="form__save-btn btn">Сохранить</button>
+                <button class="form__delete-btn btn">Удалить клиента</button>
+            </div>
+        </form>
+
+        <!-- Модальное окно с удалением контакта -->
+        <div class="window-delete-client visibility-hidden flex">
+            <h3 class="window-delete-client__title title">Удалить клиента</h3>
+            <p class="window-delete-client__text">Вы действительно хотите удалить <br> данного клиента?</p>
+            <button class="window-delete-client__delete-btn btn">Удалить</button>
+            <button class="window-delete-client__cancel-btn btn">Отмена</button>
+            <button class="window-delete-client__cross-btn btn">
+                <svg class="form__svg-cross" width="29" height="29" viewBox="0 0 29 29" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M22.2332 7.73333L21.2665 6.76666L14.4998 13.5334L7.73318 6.7667L6.76652 7.73336L13.5332 14.5L6.76654 21.2667L7.73321 22.2333L14.4998 15.4667L21.2665 22.2334L22.2332 21.2667L15.4665 14.5L22.2332 7.73333Z"
+                        fill="#B0B0B0" />
+                </svg>
+            </button>
+        </div>
+    </main>
+    <div class="overlay visibility-hidden"></div>
+    <div class="load-container flex">
+        <div class="load-container__top-block flex">
+            <svg class="load-container__top-block-svg" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M2 20C2 29.941 10.059 38 20 38C29.941 38 38 29.941 38 20C38 10.059 29.941 2 20 2C17.6755 2 15.454 2.4405 13.414 3.243"
+                    stroke="#9873FF" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" />
+            </svg>
+        </div>
+        <div class="load-container__bottom-block flex">
+            <button class="add-client__btn-stub btn flex">
+                <svg class="add-client__svg-stub" width="23" height="16" viewBox="0 0 23 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M14.5 8C16.71 8 18.5 6.21 18.5 4C18.5 1.79 16.71 0 14.5 0C12.29 0 10.5 1.79 10.5 4C10.5 6.21 12.29 8 14.5 8ZM5.5 6V3H3.5V6H0.5V8H3.5V11H5.5V8H8.5V6H5.5ZM14.5 10C11.83 10 6.5 11.34 6.5 14V16H22.5V14C22.5 11.34 17.17 10 14.5 10Z"
+                        fill="#9873FF" />
+                </svg>
+                <span class="add-client__text-btn-stub">Добавить клиента</span>
+            </button>
+        </div>
+    </div>
+    <div class="save-load flex display-none">
+        <svg class="load-container__top-block-svg" width="40" height="40" viewBox="0 0 40 40" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M2 20C2 29.941 10.059 38 20 38C29.941 38 38 29.941 38 20C38 10.059 29.941 2 20 2C17.6755 2 15.454 2.4405 13.414 3.243"
+                stroke="#9873FF" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" />
+        </svg>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+:root {
+    --bcg-body-color: #CACACA;
+    --container-and-text-white-color:#FFF;
+    --dark-gray-color: #232323;
+    --grey-color: #4A4A4A;
+    --sidebar-bcg-color: #F1F1F1;
+    --sidebat-bcg2-color: #353535;
+    --footer-black-color: #000;
+    --comments-color-bcg1: #F9F9F9;
+    --comments-color-bcg2: #F5F5F5;
+    --light-gray-color: #A0A0A0;
+    --light-blue-color: #3A9FD8;
+    --blue-color: #1D74A5;
+    --dark-blue-color: #00446A;
+    --red-color: #E15C5C;
+    --light2-gray-color: #EAEAEA;
+    --brown-color: #A67676;
+    --bright-red-color: #FF0000;
+    --dark-green-color: #76A67B;
+    --green-color: #00FF47;
+    --grey-color2: #818181;
+}
+

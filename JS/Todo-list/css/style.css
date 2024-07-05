@@ -1,0 +1,107 @@
+.nav {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+}
+
+.nav__link:not(:last-child) {
+    margin-right: 50px;
+}
+
+.container {
+    width: 1500px;
+    min-height: 100px;
+    margin: 0 auto;
+}
+
+.h1 {
+    font-size: 45px;    
+}
+
+.blockInputBtn {
+    display: flex;  
+    justify-content: space-between;  
+    width: 100%;
+    height: 65px; 
+    margin-bottom: 50px;       
+}
+
+.input {
+    width: 83%;
+    height: 100%;
+    padding: 0 10px;
+    border: none;
+    outline: 1px solid gray;   
+    border-radius: 10px; 
+    font-size: 20px;
+    color: gray;
+}
+
+.buttonAdd {
+    display: inline-block;
+    width: 15%;
+    height: 100%;
+    font-size: 17px; 
+    font-weight: 600;   
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: rgb(115, 115, 237);
+    outline: 1px solid gray;
+    border-radius: 10px;
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    border: none;
+    outline: 1px solid gray; 
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.btn {
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.btn:first-child {
+    margin-right: 10px;
+}
+
+.buttonReady {
+    background-color: rgb(15, 114, 15);
+}
+
+.buttonDelete {
+    background-color: rgb(244, 65, 65);
+}
+
+.bcg-green {
+    color: #fff;
+    background-color: rgb(100, 221, 100);
+}
+
+
+
