@@ -151,7 +151,7 @@
       let endYear = startYear + 4;
       let well = new Date().getFullYear() - startYear + 1;
       let result;
-      if (checkMonth >= 9 && well >= 4) {
+      if (checkMonth >= 9 && well >= 4 || well >= 4) {
         result = `${startYear} - ${endYear} (Закончил)`;
       } else {
         result = `${startYear} - ${endYear} (${well} курс)`;
@@ -229,7 +229,7 @@
       let checkMonth = new Date().getMonth() + 1;
       let well = thisYear - studyStart + 1;
       let yearsEducation
-      if (checkMonth >= 9 && well > 4) {
+      if (checkMonth >= 9 && well > 4 || well > 4) {
         yearsEducation = `${studyStart} - ${studyEnd} (Закончил)`;
       } else {
         yearsEducation = `${studyStart} - ${studyEnd} (${well} курс)`;
