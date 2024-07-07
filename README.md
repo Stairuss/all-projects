@@ -4,8 +4,8 @@
 
 ## Сертификаты
 
-<img src='./Сертификаты Skillbox/Сертификат по верстке.png' height='500px'>
-<img src='./Сертификаты Skillbox/Сертификат по JS.jpg' height='500px'>
+<img src='./Сертификаты Skillbox/Сертификат по верстке.png' height='400px'>
+<img src='./Сертификаты Skillbox/Сертификат по JS.jpg' height='400px'>
 
 * ___В ближайшее время появится сертификат по PHP.___
 
