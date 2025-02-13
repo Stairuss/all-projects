@@ -1,0 +1,4 @@
+.completed {      
+    background-color: var(--light-green);
+    border: 1px solid var(--green);    
+}

@@ -1,0 +1,38 @@
+.update {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-row-gap: 10px;
+}
+
+.form__btn {
+    justify-self: center;
+}
+
+.update__radio-label {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    cursor: pointer;
+}
+
+.update__radio-check{
+    position: absolute;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    border-radius: 3px;
+    border: 1px solid var(--blue);
+}
+
+.update__radio {
+    position: absolute;
+    visibility: hidden;
+}
+
+.--radio-checked {
+    background-color: var(--light-blue);
+}

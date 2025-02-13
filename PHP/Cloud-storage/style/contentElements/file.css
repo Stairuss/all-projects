@@ -1,0 +1,27 @@
+.tbody__file-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.file-name__svg {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.file-name__name {
+    text-align: start;
+    width: 100%;
+}
+
+.files__actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.files__actions-element:hover svg,
+.interface__element:hover svg {
+    opacity: .5;
+}

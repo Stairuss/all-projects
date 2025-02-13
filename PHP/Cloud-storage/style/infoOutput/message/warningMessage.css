@@ -1,0 +1,4 @@
+.warning {      
+    background-color: var(--light-yellow);
+    border: 1px solid var(--yellow);    
+}

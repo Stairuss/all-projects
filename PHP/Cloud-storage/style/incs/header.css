@@ -1,0 +1,136 @@
+.header {
+    margin-bottom: 40px;
+}
+
+.header__list {
+    height: 60px;
+    display: grid;
+    grid-template-columns: 2fr repeat(5, 1fr);
+    padding: 10px;
+    background-color: var(--very-light-grey);
+}
+
+.header__item {
+    justify-self: center;
+    align-self: center;
+}
+
+.header__item:nth-child(4) {
+    justify-self: end;
+}
+
+.header__item> :first-child {
+    color: var(--grey);
+}
+
+.header__link {
+    font-size: 25px;
+    font-weight: 500;
+    color: inherit;
+}
+
+.header__link:hover {
+    color: var(--hover-blue);
+}
+
+.header__link:active {
+    color: var(--active-blue);
+}
+
+.header__item .header__open-list-btn {
+    padding: 9px;
+    border: 1px solid var(--blue);
+    color: var(--blue);
+}
+
+.header__open-list-btn:focus {
+    background-color: var(--hover-blue);
+    color: var(--white);
+}
+
+.header__open-list-btn:hover {
+    background-color: var(--hover-blue);
+    color: var(--white);
+}
+
+.header__open-list-btn:active {
+    background-color: var(--active-blue);
+    color: var(--white);
+}
+
+.header__logout {
+    padding: 10px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--grey);
+}
+
+.header__logout:focus {
+    background-color: var(--grey);
+    color: var(--white);
+}
+
+.header__logout:hover {
+    background-color: var(--grey);
+    color: var(--white);
+}
+
+.header__logout:active {
+    background-color: var(--dark-grey);
+}
+
+.actions {
+    position: relative;    
+}
+
+.actions__container {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 17%);
+    z-index: 1;
+}
+
+.actions__list {
+    width: 230px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(25px, auto);    
+    border: 1px solid var(--grey);    
+    background-color: var(--white);
+}
+
+.actions-element {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 12px;  
+    color: var(--grey);  
+}
+
+.actions__item:not(:last-child) .actions-element {
+    border-bottom: 1px solid var(--grey);
+}
+
+.actions-element:hover {
+    color: var(--white);
+    background-color: var(--hover-blue);
+} 
+
+.actions-element:active {
+    color: var(--white);
+    background-color: var(--active-blue);
+}
+
+.overlay {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; 
+    background-color: transparent;   
+}

@@ -1,0 +1,154 @@
+.content {
+    display: grid;    
+    grid-column-gap: 10px;  
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: minmax(auto, 1000px);
+}
+
+.content__block {
+    border-collapse: collapse;
+    border: 2px solid var(--light-grey);
+    border-radius: var(--border-radius);   
+}
+
+.content__block-title {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    background-color: var(--light-blue);    
+}
+
+.interface {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    padding-left: 30%;
+    justify-content: space-around;
+    align-items: center;  
+    background-color: var(--very-light-grey);      
+}
+
+.files__directory {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 30px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: var(--light-blue);
+}
+
+.directory__svg {
+    margin-right: 10px;
+}
+
+.table-container {
+    height: 883px;
+    overflow: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.thead {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.thead th {
+    border: 1px solid var(--grey);
+    border-left: none;
+    border-right: none;
+}
+
+.thead__number {
+    width: 10%;
+}
+
+.thead__age {
+    width: 9%;
+}
+
+.thead__file-name {
+    max-width: 50%;
+}
+
+.thead__files-actions {
+    width: 40%;
+}
+
+.tbody__tr {
+    height: 40px;    
+    cursor: pointer;
+    overflow-wrap: anywhere;
+}
+
+.tbody__tr:nth-child(odd) {
+    background-color: var(--very-light-grey);    
+}
+
+.tbody__tr:nth-child(odd) {
+    background-color: var(--light-grey);    
+}
+
+.tbody__tr:nth-child(odd) td{    
+    border: 1px solid var(--very-light-grey); 
+}
+
+.tbody__tr:nth-child(even) td{   
+    border: 1px solid var(--light-grey);
+}
+
+.tbody__tr:hover {
+    background-color: var(--light-blue);
+}
+
+.tbody__td {
+    text-align: center;    
+}
+
+.tbody__td:first-child,
+.thead th :first-child {
+    border-left: none;
+}
+
+.tbody__td:last-child,
+.thead th :last-child {
+    border-right: none;
+}
+
+.form{
+    position: absolute;    
+    display: none;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 35px;
+    grid-column-gap: 10px;
+    border: 2px solid var(--green);
+    background-color: var(--light-green);
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.form__input {    
+    border: 1px solid var(--green);   
+    outline: none;     
+}
+
+.form__btn {
+    padding: 5px 10px;
+    border: 1px solid var(--green);
+}
+
+.form__btn:hover {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.form__btn:active{
+    background-color: var(--dark-green);
+    color: var(--white);
+}

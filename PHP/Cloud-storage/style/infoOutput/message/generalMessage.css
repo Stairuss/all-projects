@@ -1,0 +1,11 @@
+.infoMessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 60px;
+    margin: 0 auto;
+    color: var(--grey);
+    border-radius: var(--border-radius);
+    padding: 10px 15px;
+}

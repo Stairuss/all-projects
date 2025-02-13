@@ -1,0 +1,31 @@
+.auth {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 10%;
+    grid-row-gap: 10px;
+    grid-template-areas:
+        'a a a a'
+        'b b b b'
+        'c c c c'
+        'd d e e';
+}
+
+.form__title {
+    grid-area: a;
+}
+
+.input-email {
+    grid-area: b;
+}
+
+.input-pass {
+    grid-area: c;
+}
+
+.form__btn {
+    grid-area: e;
+}
+
+.form__link { 
+    grid-area: d;
+}

@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #c3cdd4;
+}
+
+.container {
+    width: 800px;       
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+}
+
+.btn {
+    padding: 10px 20px;  
+    cursor: pointer;
+    border-radius: 20px;
+    color: white;
+    border: none;
+}
+
+.just-validate-error-label {
+    padding-left: 10px;
+}

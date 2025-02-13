@@ -1,0 +1,4 @@
+D:\XAMPP\php\php.exe D:\XAMPP\htdocs\welcome\hello.php
+https://only-to-top.ru/blog/tools/2018-11-24-ne-udaetsya-proverit-tak-kak-ne-zadan-ispolnyaemyj-php-fajl.html - настрока пути к исполняемому файлу
+
+https://itproger.com/course/sql/7 - курс по SQL

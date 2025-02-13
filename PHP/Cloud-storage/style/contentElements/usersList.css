@@ -1,0 +1,52 @@
+.users {    
+    overflow: scroll;    
+}
+
+.users__actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;        
+}
+
+.users__actions-element {
+    padding: 5px;
+}
+
+.delete-user {    
+    background-color: var(--dark-red);
+    color: var(--white);  
+}
+
+.delete-user:focus {
+    background-color: var(--very-dark-gray);
+}
+
+.delete-user:hover {   
+    background-color: var(--very-dark-gray); 
+}
+
+.delete-user:active {
+    background-color: var(--dark-red);
+}
+
+.update-user {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.update-user:focus {
+    background-color: var(--active-blue);
+}
+
+.update-user:hover {    
+    background-color: var(--hover-blue);
+}
+
+.update-user:active {
+    background-color: var(--active-blue);
+}
+
+.currentUser {
+    background-color: var(--light-green) !important;
+    font-weight: 700;
+}

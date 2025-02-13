@@ -1,0 +1,103 @@
+.access-control-container {
+    position: fixed;
+    width: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+    background-color: var(--light-green);
+    border: 2px solid var(--dark-green);
+    padding: 15px;
+}
+
+.access-control__close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 15px;
+    border: 1px solid var(--green);
+    padding: 0 5px;
+}
+
+.access-control__close-btn:hover {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.access-control__form {
+    display: flex;
+    padding: 5px 0;
+    gap: 20px;
+}
+
+.access-control__form-input {
+    width: 75%;
+    padding: 5px;
+    outline: none;
+    border: none;
+}
+
+.access-control__form-input:focus {
+    outline: 1px solid var(--dark-green);
+}
+
+.access-control__form-btn {
+    border: 1px solid var(--dark-green);
+    padding: 5px;
+}
+
+.access-control__form-btn:hover {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.access-control__access-list-title {
+    text-align: center;
+    font-size: 20px;
+}
+
+.access-table {
+    border-collapse: collapse;
+    border: 1px solid var(--green);
+}
+
+.access-table__thead-tr {
+    height: 25px;
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.access-table-email {
+    width: 80%;
+}
+
+.access-table__td:nth-child(1) {
+    padding: 5px 15px;
+    text-align: start;
+}
+
+.access-table__td:nth-child(2) {
+    text-align: center;
+}
+
+.access-table__tbody-tr:nth-child(even) {
+    background-color: var(--light-grey);
+}
+
+.access-table__tbody-tr:nth-child(even) .access-table__td {
+    border: 1px solid var(--very-light-grey);
+}
+
+.access-table__tbody-tr:nth-child(odd) {
+    background-color: var(--very-light-grey);
+}
+
+.access-table__tbody-tr:nth-child(odd) .access-table__td {
+    border: 1px solid var(--light-grey);
+}
+
+.access-table__delete-btn:hover {
+    opacity: .5;
+}

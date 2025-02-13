@@ -1,0 +1,83 @@
+.create {
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 10%;
+    grid-row-gap: 10px;    
+    grid-template-areas:
+        'a a a a'
+        'b b b b'
+        'c c c c'
+        'd d d d'
+        'e e e e'
+        'f f f f'
+        'g g h h';
+}
+
+.form__title {
+    grid-area: a;
+}
+
+.input-name {
+    grid-area: b;
+}
+
+.input-age {
+    grid-area: c;
+}
+
+.radio-label {
+    grid-area: d;
+}
+
+.input-email {
+    grid-area: e;
+}
+
+.input-pass {
+    grid-area: f;
+}
+
+.form__link {
+    grid-area: g;
+}
+
+.form__btn {
+    grid-area: h;
+}
+
+.radio-label {
+    padding: 5px;
+    align-self: center;
+}
+
+.create__radio {
+    position: absolute;
+    visibility: hidden;
+}
+
+.create__radio-label {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    cursor: pointer;
+}
+
+.create__radio-label:not(:last-child) {
+    margin-right: 10px;
+}
+
+.create__radio-check {
+    position: absolute;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    border-radius: 3px;
+    border: 1px solid var(--blue);
+}
+
+.--radio-checked {
+    background-color: var(--light-blue);
+}

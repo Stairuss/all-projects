@@ -1,0 +1,39 @@
+https://learn.javascript.ru/number - числа
+https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math - методы Math
+https://tproger.ru/articles/metody-strok-v-javascript-shpargalka-dlja-nachinajushhih/ - Шпаргалка
+https://www.javascripttutorial.net/javascript-return-multiple-values/ - возврат результатов функции
+https://caniuse.com/ - таблицы с информацией о поддержке по каждой возможности языка.
+---------------------------------
+"get…" – возвращают значение,
+"calc…" – что-то вычисляют,
+"create…" – что-то создают,
+"check…" – что-то проверяют и возвращают логическое значение, и т.д.
+
+
+Регулярные выражения! поясняющий ролк - https://www.youtube.com/watch?v=_pLpx6btq6U&ab_channel=WebDev%D1%81%D0%BD%D1%83%D0%BB%D1%8F.%D0%9A%D0%B0%D0%BD%D0%B0%D0%BB%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%9B%D1%83%D1%89%D0%B5%D0%BD%D0%BA%D0%BE
+/ - начало и конец регулярного выражения
+. - любой одиночный символ
+[ ] - любой из них, диапазоны
+$ - конец строки
+^ - начало строки
+[^] - не
+\ - экранирование
+\d - любую цифру
+\D - все что угодно, кроме цифр
+\s - пробелы
+\S - все кроме пробелов
+\w - любая цифра, буква или знак подчеркивания
+\W - любой символ, кроме цифры, буквы или знака подчеркивания
+\b - граница слова
+\B - не границ
+
+Квантификация
+n{4} - искать n подряд 4 раза (тоже самое что \n\n\n\n)
+n{4,6} - искать n от 4 до 6 вхождений
+* от нуля и выше
++ от 1 и выше
+? - нуль или 1 раз
+Шпаргалка по регулярным выражения - https://website-lab.ru/article/regexp/shpargalka_po_regulyarnyim_vyirajeniyam/
+
+тестер по регуляркам - https://regex101.com/
+SVG - https://icon666.com/ru/search?q=%D0%BF%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%D1%82%D1%8C%D1%81%D1%8F
