@@ -10,7 +10,7 @@
 
 ## 🏗️ Архитектура
 ```
-python_basic_diploma/ 
+StarWarsBot/ 
 ├── api/
 ├── database/
 ├── handlers/
@@ -30,7 +30,7 @@ python_basic_diploma/
 1. **Клонируй проект**
 ```bash
 git clone <repo>
-cd python_basic_diploma
+cd StarWarsBot
 ```
 
 2. **Создай виртуальное окружение**
