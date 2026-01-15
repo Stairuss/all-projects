@@ -57,7 +57,7 @@ python main.py
 ```
 
 ## 📚 Используемые технологии
-- **aiogram 3.x** — асинхронный Telegram Bot API
+- **pyTelegramBotAPI** — Telegram Bot API
 - **sqlite3** — легковесная БД
 - **Black** — автоформатирование кода
 - **Type hints** — полная типизация
