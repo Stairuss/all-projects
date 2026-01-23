@@ -9,7 +9,7 @@ from .exceptions import ApiExeption, NotFoundError, RateLimitError
 class ApiClient:
     """Клиент для синхронных HTTP запросов."""
 
-    def __init__(self, base_url: str, max_retries: int = 3, timeout: int = 5) -> None:
+    def __init__(self, base_url: str, max_retries: int = 3, timeout: int = 15) -> None:
         """
         Настройка клиента для работы с API.
 
@@ -18,7 +18,8 @@ class ApiClient:
             max_retries (int): Кол-во повторных запросов при ошибке.
             timeout (int): Таймаут ожидания ответа (сек).
 
-        Return: None
+        Returns: 
+            None
         """
 
         self.session: requests.Session = requests.Session()
@@ -52,15 +53,16 @@ class ApiClient:
         self.session.close()
         return False
 
-    def _create_url(self, resource: str, id: str | None = None) -> str:
+    def _create_url(self, resource: str, id: int | None = None) -> str:
         """
         Сборка готового URL для обращения к API.
 
         Args:
             resource (str): Ресурс запроса.
-            id (str | None): Идентификатор запроса.
+            id (int | None): Идентификатор запроса.
 
-        Return: str
+        Returns:
+            str: Полный URL.
         """
 
         if not isinstance(resource, str) or not resource.strip():
@@ -76,7 +78,7 @@ class ApiClient:
         return f"{self.base_url}{resource}"
 
     def _request(
-        self, method: str, resource: str, id: str | None = None
+        self, method: str, resource: str, id: int | None = None
     ) -> Dict[str, Any]:
         """
         Универсальный HTTP запрос.
@@ -84,9 +86,10 @@ class ApiClient:
         Args:
             method (str): HTTP метод.
             resource (str): Ресурс запроса.
-            id (str | None): Идентификатор запроса.
+            id (int | None): Идентификатор запроса.
 
-        Return: Dict(str, Any)
+        Returns:
+            Dict[str, Any]: JSON ответ API.
         """
 
         url: str = self._create_url(resource, id)
@@ -94,7 +97,7 @@ class ApiClient:
             response: requests.Response = self.session.request(
                 method=method,
                 url=url,
-                timeout=self.timeout,
+                timeout=self.timeout,                
             )
             response.raise_for_status()
             return response.json()
